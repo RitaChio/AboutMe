@@ -1,0 +1,54 @@
+ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+	background-color: #333;
+	position: -webkit-sticky; /* safari */
+	position: sticky; /* sticky isn't working, debug later*/
+	top:0;
+}
+
+li {
+	float:left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 20px 40px;
+	text-decoration: none;
+}
+
+/*Change the link color on hover*/
+li a.active {
+	background-color: #dfa2cc;
+	color: white;
+}
+
+li a:hover:not(.active) {
+	background-color: #555;
+	color: white;
+}
+
+body {
+	background-color: #f8f0f6;
+	margin: 20px;
+	padding: 20px;
+}
+
+.diamond {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	padding: 0;
+	width: 600px;
+	height: 150px;
+}
+
+.bg {
+	color: blue;
+}
